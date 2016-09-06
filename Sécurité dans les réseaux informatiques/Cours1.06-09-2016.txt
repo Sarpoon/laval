@@ -1,0 +1,34 @@
+					Cours 1 : Techniques et outils de piratage
+
+						Rappel : TCP/IP
+
+Modèle en couches : 
+
+	Chaque couche :
+		Offre certains services aux couches suppérieures 
+		Utilise les services des couches inférieures
+
+	Modèle OSI en 7 couches : 
+		1 : couche physique --> transfert de bits (signal)
+		2 : Data link -> flux partage de canal
+		3 : Network : couche réseau -> routage, interconnexion, choix du chemin
+		4 : Transport
+		5 : Session -> authentification
+		6 : Présentation -> codage compression cryptage
+		7 : Application -> http, ftp, telnet
+
+	Modèle 4 couche TCP/IP :
+		1 : Host to network -> regroupe 1+2
+		2 : Internet -> couche 3
+		3 : Transport -> 4
+		4 : application -> 7
+
+
+	Couche Internet : 
+		
+		Protocoles : 
+			IP, ARP, RARP, ICMP, IGMP
+
+		Ip fonctionne au dessus de tout
+
+		Encapsulation
