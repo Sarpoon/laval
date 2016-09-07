@@ -2,6 +2,59 @@
 
 Introduction : 
 
+	La cryptologie comprend 2 matières : 
+
+		Cryptographie --> crypto = secret, graphie = écriture
+		La cryptographie c'est la science du déguisement de l'information. Ensemble des techniques de manipulation et de transformation de données pour satisfaire des buts sécuritaires. 
+		[Chiffrage + cryptage ]
+
+		Cryptanalyse : Art de décrypter des messages sans connaître la clef --> "code breaking"
+
+
+	La cryptographie : 
+		Un système cryptographique ou cryptostème est composé essentiellement d'un algorithme de cryptage et un de décryptage.
+		Un cryptostème est un quintuple (P,C,K,Epsilon,D)   ---->(cf diapo 4+5)
+
+		Le XOR se fait bit par bit :
+			m = 101           c = 110
+			k = 011           k = 011
+			-------     ET    -------
+			c = 110           m = 101
+
+	Motivations : 
+		Protéger la communication -> https, ssh, etc.
+
+		Protéger les données sur disque dur : TrueCrypt, MD5, BitLocker Drive encryption, EFS, etc.
+
+		Authentification : Kerberos, TLS/SSL, NTLM2, etc.
+
+		Vote électronique.
+
+		Argent numérique.
+
+		Navigation Anonyme : Tor.
+
+		Cloud : chyffrement homomorphique.
+
+		ETC.....
+
+	Maitres mots : 
+		Confidentialité
+		Intégrité
+		Tracabilité 
+		Disponibilité
+
+		Authentification de message
+		Non répudiation, authentification des agents, anonymat
+
+	Historique rapide : 
+		Existe depuis l'invention de l'écriture -> egyptiens, Jules César
+			Messages toujours indéchiffrés dans les pyramides
+		
+		Jusqu'à 1970 inconnu en dehors des milieux militaires et diplomatiques
+
+		Depuis l'utilisation dans le domaine civile avec l'arrivée des ordinateurs et des réseaux -> beaucoup de recherche -> des systèmes de plus en plus sécuritaires.
+
 
 
 Cryptographie classique : 
