@@ -32,3 +32,52 @@ Modèle en couches :
 		Ip fonctionne au dessus de tout
 
 		Encapsulation
+			TOS = Types of service souhaités
+			Priorité de 0 à 7 DTRC
+
+			Flags : 
+				DF = dont fragment = 1 -> ne pas fragmenter ce datagramme
+				MF = More fragment = 1 -> le datagramme contient d'autres fragments
+
+			Fragment ofset : 
+				Distance en unité de 64 bits depuis le premier bit du datagramme
+
+				MTU = Maximum transport unit -> Ethernet = 1500, WIFI = 7981
+
+			Checksum : code detecteur d'erreur
+
+			Time to live = Contient la durée de vie restante -> Initialisé à N est décrémenté
+
+			Protocole : id du protocole client -> demultiplexage
+
+			Options : Sécurité, enregistrement de la route, horaire, routage strict.
+
+			Padding : permet à l'entete de toujours occuper un nombre entier de mots de 32 bits.
+
+
+		Adressage : 
+			Adresse IP : 
+				4,2 milliards de possibilités
+				en décimale pointée	: ABCD
+
+				Deux parties : 
+					identifiant réseau : network id -> assigné par authorité (ICANN)
+					Identifiant de la machine : host id -> assigné par l'admin réseau
+
+				Adresses privées : 
+					10.x.x.x pas routable
+					172.x.x.x  " " " "
+					192.x.x.x  " " " "
+
+			Sous réseau : 
+				Découpe d'un réseau par l'admin réseau
+				Une partie de l'adresse machine sert à définir des sous réseaux
+				=> Donne un routage interne plus rapide
+
+			ARP : 
+				Trouver l'adresse @MAC à partir de l'@IP
+				Fonctionne dans un même sous-réseau
+
+				Commande : 
+					arp -a affiche tout le cache
+					arp -a @ip donne @MAC de @IP
