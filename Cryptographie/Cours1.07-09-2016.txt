@@ -55,17 +55,63 @@ Introduction :
 
 		Depuis l'utilisation dans le domaine civile avec l'arrivée des ordinateurs et des réseaux -> beaucoup de recherche -> des systèmes de plus en plus sécuritaires.
 
+	Types de crypstosystemes : 
+		Systeme à usage restreint --> els algorithmes sont secrets
+		Systeme à usage général --> La sécurité repose sur une clefs
+
+		Caractérisation : Trois dimensions indépendantes
+			Type d'opérations : substitution, permutation
+			Type de clefs : symétrique, asymétrique
+			Mode d'opération : par block ou par bit  
+
+	Stéganographie : 
+		Def : Ensemble des techniques permettant de dissimuler l'existence même d'un message
+		Remarque : Souvent le texte est caché dans un long texte
+		Exemples historiques : Encre invisible, première lettre de chaque mots, premier mot de chaque phrase.
+
+		Quelques outils : (cf diapo 12)
+			Image hide :
+			Stealth files : 
+			Masker staganographie tool : 
+			Hermetic stego : 
 
 
 Cryptographie classique : 
 
+		Des techniques très simples, faciles à comprendre.
+
 	Cryptographie monoalphabétique : 
+		Une lettre claire est toujours est toujours mappée à une même lettre
+
+	Cryptographie polyalphabétique : (cf diapo 14)
 
 
+Un peu de théorie des nombres : 
 
-	Cryptographie polyalphabétique : 
+	Propriétés : 
+		On travaille dans Zn = {0,1,..n-1}
+		On a :
+		(a+b)mod n = [(a mod n) + (b mod n)]mod n
+		(a*b)mod n = [(a mod n) * (b mod n)]mod n
 
+		a est congru a b mod n <=> a mod n = b mod n
 
+	Chiffrement affine : (cd diapo 16+)
+		P = C = Z26
+		K = {(a,b) € Z26 x Z26 | pgcd(a,26) = 1}
+		Pour tout k = (a,b) € K et x,y € Z26
 
+		pour trouver l'inverse de a ==> a*a-1 mod n = 1
 
-Instruments de (dé)cryptage : 
+		E(x) = (a*x+5)mod 26
+		dk(y) = a-1(y-b)mod 26
+
+		Si a = 1 alors chiffrement par décalage de b positions
+
+	Chiffrement par substitution : 
+		P = C = Z26
+		K = {Pi | Pi est une permutation des elements de Z26}
+		Pour tout Pi € K et (x,y) € Z26 x Z26
+
+		On a : 
+		ePi
