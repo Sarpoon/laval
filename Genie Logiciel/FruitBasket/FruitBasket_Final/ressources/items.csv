@@ -1,0 +1,6 @@
+APPLE,Pomme,255,0,0,0.79,ressources/images/apple.png,50
+ORANGE,Orange,234,92,22,0.79,ressources/images/orange.png,50
+GRAPES,Raisins bleus,68,14,98,0.79,ressources/images/grapes.png,70
+LEMON,Citron frais,255,255,0,0.79,ressources/images/lemon.png,40
+PEAR,Poire mûre,172,211,115,0.79,ressources/images/pear.png,50
+WATERMELON,Melon entier,0,255,0,0.79,ressources/images/watermelon.png,100

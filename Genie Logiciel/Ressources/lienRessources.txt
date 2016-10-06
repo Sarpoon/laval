@@ -1,0 +1,10 @@
+Wiki Java + gestion de projet : 
+	http://www2.ift.ulaval.ca/gaudreault/dokuwiki_a14/doku.php?id=labs:fruitbasket:analyse
+
+NetBeans : 
+	https://netbeans.org/kb/trails/matisse.html
+
+VisualParadigm : 
+	https://www.visual-paradigm.com/download/community.jsp
+
+
