@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.event.ActionEvent?>
+
+<BorderPane fx:id="pane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ex5.Controller">
+   <bottom>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="cipherButton" mnemonicParsing="false" onMouseClicked="#cipher" text="Chiffrer">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="decipherButton" mnemonicParsing="false" onMouseClicked="#decipher" text="Déchiffrer">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+            <Separator orientation="VERTICAL">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Separator>
+            <Label prefHeight="25.0" prefWidth="49.0" text="Ligne">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+            <TextField />
+            <Separator orientation="VERTICAL">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Separator>
+            <Label prefHeight="25.0" prefWidth="70.0" text="Colonne">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+            <TextField>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </TextField>
+         </children>
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </padding>
+      </HBox>
+   </bottom>
+   <center>
+      <TableView BorderPane.alignment="CENTER">
+         <columns>
+            <TableColumn prefWidth="75.0" text="Numéro" />
+            <TableColumn prefWidth="122.0" text="Service" />
+            <TableColumn prefWidth="87.0" text="URL" />
+            <TableColumn prefWidth="96.0" text="User Name" />
+            <TableColumn prefWidth="103.0" text="Password" />
+            <TableColumn prefWidth="208.0" text="Comment" />
+         </columns>
+      </TableView>
+   </center>
+   <top>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="openFileButton" mnemonicParsing="false" onMouseClicked="#openFile" text="Ouvrir">
+               <HBox.margin>
+                  <Insets left="2.0" right="2.0" />
+               </HBox.margin></Button>
+            <Region HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets left="3.0" right="2.0" />
+               </HBox.margin></Region>
+            <Button fx:id="saveFileButton" mnemonicParsing="false" onMouseClicked="#saveFile" text="Enregistrer">
+               <HBox.margin>
+                  <Insets left="3.0" right="2.0" />
+               </HBox.margin></Button>
+            <Button fx:id="addLineButton" mnemonicParsing="false" onMouseClicked="#addLine" text="Ajouter">
+               <HBox.margin>
+                  <Insets left="3.0" right="2.0" />
+               </HBox.margin></Button>
+            <Button fx:id="updateLineButton" mnemonicParsing="false" onMouseClicked="#updateLine" text="Modifier">
+               <HBox.margin>
+                  <Insets left="3.0" right="2.0" />
+               </HBox.margin></Button>
+            <Button fx:id="deleteLineButton" mnemonicParsing="false" onMouseClicked="#deleteLine" text="Supprimer">
+               <HBox.margin>
+                  <Insets left="3.0" right="2.0" />
+               </HBox.margin></Button>
+            <Region HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets left="3.0" right="2.0" />
+               </HBox.margin></Region>
+            <Button fx:id="quitButton" mnemonicParsing="false" onMouseClicked="#quit" text="Quitter">
+               <HBox.margin>
+                  <Insets left="3.0" right="2.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+         </padding>
+      </HBox>
+   </top>
+</BorderPane>
